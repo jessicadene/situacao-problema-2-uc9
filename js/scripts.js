@@ -14,19 +14,6 @@ function menu() {
       }
     }
   }
-
-/* Script do Login */ 
-function enviar{
-  var email = meuemail@email.com;
-var senha = 1234;
-let email = document.getElementById("emailid");
-if (email.value != email){
-  alert (Email Inválido!);
-}
-let password=documento.getElementById("passwordid");
-if (senha.value !=senha){
-  alert (senha Inválida);
-}
-}
-
- 
+  $('.carousel').carousel({
+    interval: 2000
+  })

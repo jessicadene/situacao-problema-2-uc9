@@ -7,124 +7,254 @@
     <meta name="description" content="Loja virtual de jogos">
     <meta name="keywords" content="xbox,playstation,console,ps4,jogos">
     <meta name="autor" content=" Jessica Dene">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Game Mania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+    }
+    </style>
+    <script>
+		$(document).ready(function () {
+			$("#flip").click(function () {
+				$("#panel").slideToggle("slow");
+			});
+		});
+	</script>
+    
 </head>
 <body>
-  
-    <div class="conteiner-fluid">
-        <div class="row">
-            <div class="col-12" style="text-align: right;">
-                <nav id="opcoes">
-                    <a href="atendimento.html" ref="next">Atendimento</a>
-                    <a href="Login.html" ref="next">Login</a>
-                    <a href="favoritos.html" ref="next">Favoritos</a>
-                    <a href="carrinhodecompras.html" ref="next">Carrinho de Compras</a>
-                    <a href="contato.html" ref="next">Contato</a>
-                </nav>
-
+    <div id="opcoes">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-12">
+                    <a href="atendimento.html"><img src="imagens/atendimento.png" alt="Atendimento" width="32" height="32"></a>
+                    <a href="login.html"><img src="imagens/login.png" alt="login" width="32" height="32"></a>
+                    <a href="carrinhodecompras.html"><img src="imagens/sacola de compras.png" alt="Sacola de Compras" width="32" height="32"></a>
+                    <a href="favoritos"><img src="imagens/favorito.png" alt="favoritos" width="32" height="32"></a>
+                </div>
             </div>
         </div>
     </div>
-  
-    <div class="conteiner-fluid">
-        <div class="row">
-            <div class="col-6">
-                <nav id=logo>
-                <img src="imagens/logo.jpeg" alt="Logo" width="15%" ></div></nav>
-
-                
-
-            <div class="col-6" style="text-align: center;">
-                <nav id="bemvindo">
-                <h1>Bem vindo!</h1>
-            </nav>
+    <div id="logo">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-4">
+                    <img src="imagens/logo.jpeg" alt="Logo" width="35%">
                 </div>
-            </div>
-        
-            <div class="conteiner-fluid">
-                <div class="row">
-                    <div class="col-12" style="text-align: center;">
-                        <nav id="pesquisa">
-                            <img src="imagens/busca.png" alt="Busca" width="2%">
-                        <label for="pesquisa"></label>
-                        <input type="search" id="pesquisa" value="O que você Procura?" readonly>
-                    </nav>
-                </div>
+                <div class="col-8">
+                    <img src="imagens/procurar.png" width="32" height="32">
+                    <label for="barradepesquisa"></label>
+                    <input type="search" id="barradepesquisa" placeholder="O que você Procura?">
                 </div>
             </div>
         </div>
-        <div class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="prevenda.html">Pré-Venda</a>
-            
-            <div class="dropdown">
-              <button class="dropbtn" onclick="menu()">Jogos
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="playstation.html">PlayStation</a>
-                <a href="xbox.html">XBox</a>
-                <a href="pc.html">PC</a>
-              </div>
+    </div>
+    <div id=sejabemvindo>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Seja bem vindo!</h1>
+                </div>
             </div>
-            <a href="lancamentos.html">Lançamentos</a> 
-          </div>
-    <div class="conteiner-fluid">
-        <div class="Row">
-            <div class="col-12">
+        </div>
+    </div>
+
+    <div id="flip">Clique aqui!!!</div>
+	<div id="panel">Você ganhou 10% de desconto na sua primeira compra! Basta colocar o código #MINHAPRIMEIRACOMPRA21
+		<img src="imagens/game-on.png" style="width:30%">
+	</div>
+    <div class="navbar">
+		<a href="index.html">Inicio</a>
+		<a href="ofertas.html">Ofertas</a>
+
+		<div class="dropdown">
+			<button class="dropbtn" onclick="menu()">Jogos
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+				<a href="playstation.html">PlayStation</a>
+				<a href="xbox.html">XBox</a>
+				<a href="pc.html">PC</a>
+			</div>
+		</div>
+		<a href="hardware.html">Hardware</a>
+		<a href="atendimento.html">Precisa de ajuda?</a>
+		
+	</div>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-12" style="background-color: black;">
                 <h1>Games</h1>
             </div>
         </div>
     </div>
-   <div class="conteiner-fluid">
-       <div class="row">
+   <div id="carrousel">
+       <div class="conteiner">
            <div class="col-12">
-               /* carrosel de imagens*/
+            <div class="container">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+              
+                    <div class="item active">
+                      <img src="imagens/slide1.jpg" alt="Far Cry 6" width="460" height="345">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+              
+                    <div class="item">
+                      <img src="imagens/slide2.png" alt="Fifa 2022" width="460" height="345">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                      <img src="imagens/slide3.jpg" alt="Battlefild 2042" width="460" height="345">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+              
+                    <div class="item">
+                      <img src="imagens/slide4.png" alt="Hallo Infinite" width="460" height="345">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
            </div>
        </div>
    </div>
-   <div class="conteiner-fluid">
-    <div class="Row">
-        <div class="col-12">
-            <h1>Mais buscados da semana:</h1>
+   <div id="galeriadeimagens">
+    <div class="container">
+        <h2>Jogos Mais Buscados da semana!</h2>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/cyberpunk.jpg" alt="Cyberpunk2077" style="width:100%">
+                <div class="caption">
+                  <p>Cyberpunk 2077</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/fifa.jpg" alt="Fifa2021" style="width:100%">
+                <div class="caption">
+                  <p>FIFA 2021</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/ghost.jpg" alt="ghost" style="width:100%">
+                <div class="caption">
+                  <p>Ghost</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/gta.jpg" alt="GTA" style="width:150%">
+                <div class="caption">
+                  <p>GTA</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/village.webp" alt="Village" style="width:150%">
+                <div class="caption">
+                  <p>Village</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <a href="jogos.html" target="_blank">
+                <img src="imagens/watchdogs.jpg" alt="watchdogs" style="width:150%">
+                <div class="caption">
+                  <p>Watchdogs</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<div class="conteiner-fluid">
-    <div class="Row">
-        <div class="col-12">
-            <figure class="Jogos">
-                <img src="imagens/Call of duty modern warfare.png" alt="Call of Duty" sizes="10x10" >
-                <img src="imagens/control ps4.png" alt="Control PS4" sizes="10x10">
-                <img src="imagens/nioh 2.png" alt="Nioh 2 ps4" sizes="10x10">
-                <img src="imagens/Star Wars jedi ps4.png" alt="Star Wars" sizes="10x10">
-                <img src="imagens/until down.png" alt="Until down" sizes="10x10">
-            </figure>
-           
-        </div>
-    </div>
-</div>
-<div class="conteiner-fluid">
-    <div class="row">
-        <div class="col-12" style="text-align: right;">
-            <nav id="linhajogos">
-                <a href="jogosmaisaguardados.html" ref="next">Jogos mais Aguardados de 2021!</a></nav>
-            <img src="imagens/jogos-mais-esperados-de-2021.png" alt="Jogos mais aguardados de 2021" width="70%" style="text-align: left; ;">
-        </div>
-    </div>
-</div>
+      </div>
+   </div>
+   <div class="conteiner">
+       <div class="row">
+           <div class="col-12">
+               <h1></h1>
+           </div>
+       </div>
+   </div>
+   <div id="dica">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="thumbnail">
+              <a href="dicas.html" target="_blank">
+                <img src="imagens/jogos-mais-esperados-de-2021.png"alt="Cyberpunk2077" style="width:100%">
+                <div class="caption">
+                  <h1>Confira os jogos mais aguardados de 2021!</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+   </div>
 </body>
 <footer>
-  <hr>
-    <figure class="redessociais">
-        <img src="imagens/facebook.jpg" alt="" width="5%" style="text-align: right;">
-        <img src="imagens/instagram.png" alt="" width="5%"style="text-align:right;" >
-        <img src="imagens/whatsapp.jpg" alt="" width="5%" style="text-align: right;">
-    </figure>
-    
+  <div id="redessociais">
+      <div class="conteiner">
+          <div class="row">
+              <div class="col-md-12">
+                <a href="facebook.html"><img src="imagens/facebook.png" alt="Facebook" width="32" height="32"></a>
+                <a href="whatsapp.html"><img src="imagens/whatsapp.png" alt="Whatsapp" width="32" height="32"></a>
+                <a href="instagram.html"><img src="imagens/instagram.png" alt="Instagram" width="32" height="32"></a>
+              </div>
+          </div>
+      </div>
+  </div>  
 </footer>
 <!--Tag Scripts-->
 <script type="text/javascript" src="script.js"></script>
